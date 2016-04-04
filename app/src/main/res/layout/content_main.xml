@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/currentDie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/reset_dice"
+        android:layout_alignEnd="@+id/reset_dice" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hold_dice"
+        android:id="@+id/hold_dice"
+        android:layout_alignTop="@+id/roll_dice"
+        android:layout_toRightOf="@+id/roll_dice"
+        android:layout_toEndOf="@+id/roll_dice"
+        android:onClick="holdDice"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll_dice"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/roll_dice"
+        android:layout_below="@+id/currentDie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="rollDice"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_dice"
+        android:id="@+id/reset_dice"
+        android:layout_alignTop="@+id/hold_dice"
+        android:layout_toRightOf="@+id/hold_dice"
+        android:layout_toEndOf="@+id/hold_dice"
+        android:onClick="reset"/>
+
+
+</RelativeLayout>

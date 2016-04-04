@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ScarnesDice</string>
+    <string name="action_settings">Settings</string>
+    <string name="roll_dice">Roll</string>
+    <string name="hold_dice">Hold</string>
+    <string name="reset_dice">Reset</string>
+    <string name="score">Your score: %1$d Computer Score: %2$d Current Turn Score: %3$d </string>
+    <string name="title_activity_dice">DiceActivity</string>
+</resources>
